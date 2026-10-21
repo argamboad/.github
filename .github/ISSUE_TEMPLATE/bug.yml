@@ -1,0 +1,33 @@
+name: Bug
+description: Something does not do what it should.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you saw — the message, the screen, the log line.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should have happened
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps
+      description: From a clean start, the shortest way to see it again.
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: The app and its version or commit (and the platform version it runs, from /api/version).
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Anything useful from the logs or the browser console. No secrets — redact tokens and keys.
+      render: text

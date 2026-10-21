@@ -1,0 +1,32 @@
+name: Task
+description: A piece of work, in the house shape (What · Done when · Cost · Undo · Ref).
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What
+      description: What changes, and why — the problem, not only the fix.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: The observable result that closes it — a test, a run, a screen.
+    validations:
+      required: true
+  - type: textarea
+    id: cost
+    attributes:
+      label: Cost
+      description: CI minutes, a release, the owner's time — or "rides in the milestone's PR".
+  - type: textarea
+    id: undo
+    attributes:
+      label: Undo
+      description: How to take it back (usually "Revert.").
+  - type: textarea
+    id: ref
+    attributes:
+      label: Ref
+      description: Decisions (ADR-…), related issues (owner/repo#N), docs.
